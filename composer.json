@@ -1,0 +1,48 @@
+{
+    "name": "tal7aouy/laracurrency",
+    "description": "Tiny Laravel worldwide currency formatter",
+    "type": "package",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "currency",
+        "formater",
+        "laravel currency"
+    ],
+    "authors": [
+        {
+            "name": "Mhammed Talhaouy",
+            "email": "tal7aouy@gmail.com",
+            "role": "PHP Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^7.0|^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tal7aouy\\LaraCurrency\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tal7aouy\\LaraCurrency\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tal7aouy\\LaraCurrency\\LaraCurrencyServiceProvider"
+            ],
+            "aliases": {
+                "Currency": "Tal7aouy\\LaraCurrency\\Facades\\Currency"
+            }
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0"
+    }
+}
